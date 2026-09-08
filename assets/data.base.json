@@ -88,7 +88,7 @@
     "description": null
   },
   "headline": "AI Engineer, product and platform",
-  "summary": "AI Engineer on the founding team at Colligence Research in Bengaluru. I build the product, agentic and LLM pipelines, code-generation services, backend APIs, and I own the platform it runs on: CI/CD, infrastructure-as-code, observability, incident response and auth. The combination is the point: the person who ships the agent workflow is the person who carries the pager for it.",
+  "summary": "AI Engineer on the founding team at Colligence Research in Bengaluru. I build the product, agentic and LLM pipelines, code-generation services, backend APIs, and I own the platform it runs on: CI/CD, infrastructure-as-code, observability, incident response and auth. The combination is the point: the person who ships the agent workflow is the person who carries the pager for it. What joins the two is AI engineering: I apply the same agentic and retrieval methods to the platform itself, so runbook lookup, change context and incident response are grounded in the organisation's own configuration and history.",
   "typedPhrases": [
     "agentic and LLM pipelines",
     "CI/CD and infrastructure-as-code",
