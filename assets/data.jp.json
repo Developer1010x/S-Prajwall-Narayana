@@ -589,12 +589,12 @@
     {
       "id": "datafusion-nushell-contributions",
       "title": "Apache DataFusion and Nushell, open-source contributions",
-      "subtitle": "One merged upstream PR, five under review, not my projects",
+      "subtitle": "Three merged upstream PRs, three under review, not my projects",
       "icon": "fa-code-pull-request",
       "color": "#0F766E",
-      "description": "A contribution, not a project of mine. A broken example in Apache DataFusion's Python bindings led to a documented CSV option that silently did nothing, and then to a panic on the same path inside the Rust engine. PR #19017 to Nushell is merged; the DataFusion and remaining Nushell pull requests are open for review.",
+      "description": "A contribution, not a project of mine. A broken example in Apache DataFusion's Python bindings led to a documented CSV option that silently did nothing, and then to a panic on the same path inside the Rust engine. Three pull requests to Nushell are merged; the DataFusion pull requests are open for review.",
       "metrics": [
-        "1 PR merged, 5 open for review",
+        "3 PRs merged, 3 open for review",
         "3 bug reports filed upstream",
         "Rust and Python across 3 repositories"
       ],
