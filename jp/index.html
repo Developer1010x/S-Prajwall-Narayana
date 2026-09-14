@@ -427,6 +427,39 @@
       <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">Vite</span><span class="project-tag">deck.gl</span><span class="project-tag">Open source</span></div>
       <div class="project-links"><a href="https://github.com/koala73/worldmonitor/pull/5459" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> コード</a></div>
     </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#6E56CF22">
+        <i class="fas fa-code-branch" style="color:#6E56CF" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">循環的複雑度測定 Clang プラグイン</h3>
+      <p class="project-subtitle">関数ごとの制御フロー複雑度を測るコンパイラプラグイン &bull; Aug 2026</p>
+      <p class="project-description">コンパイル対象ファイル内の各関数の循環的複雑度を報告する Clang プラグインです。コンパイラ自体に読み込まれるため、テキストを再解析するのではなく、プリプロセス後のコードを実際の include パスとフラグのもとで取り扱います。制御フローグラフを構築せず AST を走査します。M = E − N + 2P は単一関数では分岐点 + 1 に帰着するからです。GCC 向けに書かれた C / C++ も解析でき、文式、省略形の条件演算子、計算型 goto、case 範囲、__attribute__ などの GNU 拡張に対応します。2024 年の学生プロジェクトが原型で、2026 年に LLVM 18 向けに再実装し、switch を case ごとではなく一つと数えていた点など四つの計測誤りを修正しました。</p>
+      <ul class="project-metrics"><li>テスト 15 件、全件パス</li><li>LLVM 18、C および C++</li></ul>
+      <div class="project-tags"><span class="project-tag">C++</span><span class="project-tag">Clang</span><span class="project-tag">LLVM</span><span class="project-tag">AST</span><span class="project-tag">コンパイラ</span></div>
+      <div class="project-links"><a href="https://github.com/Developer1010x/cyclomatic-complexity-plugin" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> コード</a></div>
+    </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#B03A2E22">
+        <i class="fas fa-code-pull-request" style="color:#B03A2E" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">Ansible community.general へのオープンソース貢献</h3>
+      <p class="project-subtitle">マージ済みの上流バグ修正、自身のプロジェクトではありません &bull; Aug 2026</p>
+      <p class="project-description">自身のプロジェクトではなく、オープンソースへの貢献です。community.general は Ansible 最大のコミュニティコレクションで、多くの本番自動化環境が依存しています。snap モジュールは、存在しない snap を報告する代わりに IndexError で落ちていました。`snap info` はこの状態を二通りに報告します。複数問い合わせた場合は stdout に警告と戻り値 0、一つの場合は stderr にエラーと戻り値 1 です。パーサーは前者しか見ていなかったため、後者が空の結果を参照するコードに流れていました。2026 年 8 月にマージされたプルリクエスト 12570 で、両方の形式を扱うよう修正しました。</p>
+      <ul class="project-metrics"><li>PR #12570 マージ済</li><li>3 ファイルで +59 / −2</li></ul>
+      <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Ansible</span><span class="project-tag">オープンソース</span><span class="project-tag">バグ修正</span></div>
+      <div class="project-links"><a href="https://github.com/ansible-collections/community.general/pull/12570" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> コード</a></div>
+    </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#0F766E22">
+        <i class="fas fa-code-pull-request" style="color:#0F766E" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">Apache DataFusion and Nushell, open-source contributions</h3>
+      <p class="project-subtitle">One merged upstream PR, four under review, not my projects &bull; Sep 2026</p>
+      <p class="project-description">A contribution, not a project of mine. A broken example in Apache DataFusion&#39;s Python bindings led to a documented CSV option that silently did nothing, and then to a panic on the same path inside the Rust engine. PR #19017 to Nushell is merged; the DataFusion pull requests are open for review.</p>
+      <ul class="project-metrics"><li>1 PR merged, 4 open for review</li><li>3 bug reports filed upstream</li><li>Rust and Python across 3 repositories</li></ul>
+      <div class="project-tags"><span class="project-tag">Rust</span><span class="project-tag">Python</span><span class="project-tag">Apache DataFusion</span><span class="project-tag">Nushell</span><span class="project-tag">Open source</span></div>
+      <div class="project-links"><a href="https://github.com/nushell/nushell/pull/19017" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> コード</a></div>
+    </article>
   </div>
 </section>
 

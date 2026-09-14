@@ -427,6 +427,39 @@
       <div class="project-tags"><span class="project-tag">TypeScript</span><span class="project-tag">Vite</span><span class="project-tag">deck.gl</span><span class="project-tag">Open source</span></div>
       <div class="project-links"><a href="https://github.com/koala73/worldmonitor/pull/5459" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
     </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#6E56CF22">
+        <i class="fas fa-code-branch" style="color:#6E56CF" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">Cyclomatic Complexity, Clang plugin</h3>
+      <p class="project-subtitle">Compiler plugin measuring control-flow complexity per function &bull; Aug 2026</p>
+      <p class="project-description">A Clang plugin that reports the cyclomatic complexity of every function in the file being compiled. It loads into the compiler itself, so it sees the code after preprocessing, with the real include paths and feature flags, rather than reparsing text. It walks the AST instead of building a control-flow graph, which works because M = E − N + 2P collapses to decision points plus one for a single function. It analyzes C and C++ written for GCC as well as Clang, including the GNU extensions real codebases use: statement expressions, the binary conditional with an omitted operand, computed goto, case ranges and __attribute__. Originally a 2024 college project written to understand how a compiler represents code once it stops being text; rebuilt in 2026 for LLVM 18, which meant fixing four counting errors the original had, among them treating a switch as one decision rather than one per case, and folding a lambda&#39;s branches into its enclosing function.</p>
+      <ul class="project-metrics"><li>15 tests, all passing</li><li>LLVM 18, C and C++</li></ul>
+      <div class="project-tags"><span class="project-tag">C++</span><span class="project-tag">Clang</span><span class="project-tag">LLVM</span><span class="project-tag">AST</span><span class="project-tag">Compilers</span></div>
+      <div class="project-links"><a href="https://github.com/Developer1010x/cyclomatic-complexity-plugin" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+    </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#B03A2E22">
+        <i class="fas fa-code-pull-request" style="color:#B03A2E" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">Ansible community.general, open-source contribution</h3>
+      <p class="project-subtitle">Merged upstream bug fix, not my project &bull; Aug 2026</p>
+      <p class="project-description">An open-source contribution rather than a project of mine. community.general is Ansible&#39;s largest community collection, depended on by a very large number of production automation setups. The snap module crashed with an IndexError instead of reporting a missing snap, because `snap info` reports that condition two different ways: a warning on stdout with return code 0 when several snaps are queried, and an error on stderr with return code 1 when only one is. The parser matched only the first form, so the single-snap case fell through to code that indexed an empty result. Pull request 12570, merged August 2026, handles both forms and fixes the reported issue.</p>
+      <ul class="project-metrics"><li>PR #12570 merged</li><li>+59 / −2 across 3 files</li></ul>
+      <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Ansible</span><span class="project-tag">Open source</span><span class="project-tag">Bug fix</span></div>
+      <div class="project-links"><a href="https://github.com/ansible-collections/community.general/pull/12570" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+    </article>
+    <article class="project-waterfall-card">
+      <div class="project-icon" style="background:#0F766E22">
+        <i class="fas fa-code-pull-request" style="color:#0F766E" aria-hidden="true"></i>
+      </div>
+      <h3 class="project-title">Apache DataFusion and Nushell, open-source contributions</h3>
+      <p class="project-subtitle">One merged upstream PR, four under review, not my projects &bull; Sep 2026</p>
+      <p class="project-description">A contribution, not a project of mine. A broken example in Apache DataFusion&#39;s Python bindings led to a documented CSV option that silently did nothing, and then to a panic on the same path inside the Rust engine. PR #19017 to Nushell is merged; the DataFusion pull requests are open for review.</p>
+      <ul class="project-metrics"><li>1 PR merged, 4 open for review</li><li>3 bug reports filed upstream</li><li>Rust and Python across 3 repositories</li></ul>
+      <div class="project-tags"><span class="project-tag">Rust</span><span class="project-tag">Python</span><span class="project-tag">Apache DataFusion</span><span class="project-tag">Nushell</span><span class="project-tag">Open source</span></div>
+      <div class="project-links"><a href="https://github.com/nushell/nushell/pull/19017" target="_blank" rel="noopener noreferrer" class="project-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a></div>
+    </article>
   </div>
 </section>
 
